@@ -1,0 +1,93 @@
+
+{% extends 'front/base.html' %}
+
+
+
+{% block content %} 
+
+<section id="hero" class="hero d-flex align-items-center mt-4">
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 ">
+		     <div class="list-group ">
+              <a href="#" class="list-group-item list-group-item-action active">Mon Profile</a>
+              <a href="#" class="list-group-item list-group-item-action">Mes informations d'utilisateur</a>
+              <a href="#" class="list-group-item list-group-item-action">Mes cv</a>
+              <a href="#" class="list-group-item list-group-item-action">Mes lettres de motivation</a>
+              <a href="#" class="list-group-item list-group-item-action">Dealer</a>
+              <a href="#" class="list-group-item list-group-item-action">Media</a>
+              <a href="#" class="list-group-item list-group-item-action">Post</a>
+              <a href="#" class="list-group-item list-group-item-action">Category</a>
+              <a href="#" class="list-group-item list-group-item-action">New</a>
+              <a href="#" class="list-group-item list-group-item-action">Comments</a>
+              <a href="#" class="list-group-item list-group-item-action">Appearance</a>
+              <a href="#" class="list-group-item list-group-item-action">Reports</a>
+              <a href="#" class="list-group-item list-group-item-action" style="background-color: red; color: white;">Supprimer mon compte</a>      
+            </div> 
+		</div>
+		<div class="col-md-9">
+		    <div class="card">
+		        <div class="card-body">
+		            <div class="row">
+		                <div class="col-md-12">
+		                    <h4>Mon profile</h4>
+		                    <hr>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-md-12">
+		                    <form>
+                              <div class="form-group row mt-1">
+                                <label for="username" class="col-4 col-form-label">Nom d'utilisateur*</label> 
+                                <div class="col-8">
+                                  <input id="username" name="username" placeholder="Nom d'utilisateur" class="form-control here" required="required" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row mt-1">
+                                <label for="name" class="col-4 col-form-label">Prénom</label> 
+                                <div class="col-8">
+                                  <input id="name" name="name" placeholder="Prénom" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row mt-1">
+                                <label for="lastname" class="col-4 col-form-label">Nom</label> 
+                                <div class="col-8">
+                                  <input id="lastname" name="lastname" placeholder="Nom de famille" class="form-control here" type="text">
+                                </div>
+                              </div>             
+                              <div class="form-group row mt-1">
+                                <label for="email" class="col-4 col-form-label">Email*</label> 
+                                <div class="col-8">
+                                  <input id="email" name="email" placeholder="Adresse Email" class="form-control here" required="required" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row mt-1">
+                                <label for="website" class="col-4 col-form-label">Site web </label> 
+                                <div class="col-8">
+                                  <input id="website" name="website" placeholder="Votre site web" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row mt-1">
+                                <label for="publicinfo" class="col-4 col-form-label">Biographie</label> 
+                                <div class="col-8">
+                                  <textarea id="publicinfo" name="publicinfo" cols="40" rows="4" class="form-control" placeholder="Ma biographie"></textarea>
+                                </div>
+                              </div>
+                              
+                              <div class="form-group row mt-4">
+                                <div class="offset-4 col-8">
+                                  <button name="submit" type="submit" class="btn btn-primary">Update My Profile</button>
+                                </div>
+                              </div>
+                            </form>
+		                </div>
+		            </div>
+		            
+		        </div>
+		    </div>
+		</div>
+	</div>
+</div>
+
+</section>
+{% endblock content %}
